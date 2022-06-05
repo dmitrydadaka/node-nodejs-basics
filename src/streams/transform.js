@@ -8,9 +8,7 @@ export const transform = async () => {
               callback(null, chunk.reverse());
             },
           });
-        //const str = 
-        process.stdin.pipe(reverse).pipe(stdout)
-        //console.log(str);
+        process.stdin.pipe(reverse).pipe(stdout);
         
 };
 transform();
