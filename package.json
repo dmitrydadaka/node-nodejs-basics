@@ -10,11 +10,24 @@
     "type": "git",
     "url": "git+https://github.com/AlreadyBored/node-nodejs-basics.git"
   },
-  "keywords": ["nodejs", "assignments", "alreadybored"],
+  "keywords": [
+    "nodejs",
+    "assignments",
+    "alreadybored"
+  ],
   "author": "alreadybored",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlreadyBored/node-nodejs-basics/issues"
   },
-  "homepage": "https://github.com/AlreadyBored/node-nodejs-basics#readme"
+  "homepage": "https://github.com/AlreadyBored/node-nodejs-basics#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs-path": "^0.0.25",
+    "fs-stream": "^0.2.1",
+    "fs.promises": "^0.1.2",
+    "path": "^0.12.7",
+    "path-dirname": "^1.0.2",
+    "process": "^0.11.10"
+  }
 }
