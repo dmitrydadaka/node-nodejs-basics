@@ -5,7 +5,7 @@ export const read = async () => {
 
     try {
         await fs.promises.access(fileName);
-        await fs.readFile( fileName, 'utf-8', function (err, data) {
+        await fs.readFile(fileName, 'utf-8', function (err, data) {
             if (err) throw err;
             console.log(data);
         });
