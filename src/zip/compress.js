@@ -6,7 +6,7 @@ export const compress = async () => {
     const stream = createReadStream(filePath);
     stream
         .pipe(createGzip())
-        .pipe(createWriteStream(`src/zip/archive.gz`))
+        .pipe(createWriteStream(`src/zip/files/archive.gz`))
         .on("finish", () =>
             console.log(`Successfully compressed the file at ${filePath}`)
         );
