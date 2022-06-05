@@ -1,3 +1,8 @@
 export const parseEnv = () => {
-    // Write your code here 
+    for(let e in process.env) {
+        if(e.includes('RSS_')) {
+            console.log(`${e} = ${process.env[e]}`);
+        }
+    }
 };
+parseEnv();
