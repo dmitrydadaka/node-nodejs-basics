@@ -1,4 +1,5 @@
-import { pipeline, Transform } from 'stream';
+import { stdout } from 'process';
+import { Transform } from 'stream';
 
 export const transform = async () => {
      
@@ -7,6 +8,9 @@ export const transform = async () => {
               callback(null, chunk.reverse());
             },
           });
+        //const str = 
+        process.stdin.pipe(reverse).pipe(stdout)
+        //console.log(str);
         
 };
 transform();
